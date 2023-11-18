@@ -1,0 +1,29 @@
+body {
+  margin: 10;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Open Sans , sans-serif;
+}
+
+  html, body, #root {
+  background-color: aquamarine;
+  height: 100%;
+}
+
+h1 {
+  background-color: yellow;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+  border: 2px solid black;
+  border-radius: 10px;
+  
+}
+
