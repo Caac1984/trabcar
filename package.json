@@ -1,196 +1,75 @@
 {
-  
- 
   "name": "trabcar",
-  
- 
   "version": "0.1.0",
-  
- 
   "private": true,
-  
- 
   "dependencies": {
-  
- 
-    
- 
-  "@testing-library/jest-dom": "^5.17.0",
-  
- 
-    
- 
-  "@testing-library/react": "^13.4.0",
-  
- 
-    
- 
-  "@testing-library/user-event": "^13.5.0",
-  
- 
-    
- 
-  "bootstrap": "^5.3.2",
-  
- 
-    
- 
-  "cross-env": "~7.0.3",
-  
- 
-    
- 
-  "react": "^18.2.0",
-  
- 
-    
- 
-  "react-dom": "^18.2.0",
-  
- 
-    
- 
-  "react-router-dom": "^6.19.0",
-  
- 
-    
- 
-  "react-scripts": "5.0.1",
-  
- 
-    
- 
-  "sass": "~1.56.0",
-  
- 
-    
- 
-  "web-vitals": "^2.1.4"
-  
- 
+    "@fullcalendar/daygrid": "^6.1.10",
+    "@fullcalendar/interaction": "^6.1.10",
+    "@fullcalendar/react": "^6.1.10",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "babel": "^6.23.0",
+    "Babel": "^0.0.1",
+    "bootstrap": "^5.3.2",
+    "buffer": "^6.0.3",
+    "build": "^0.1.4",
+    "bundle": "^2.1.0",
+    "cross-env": "~7.0.3",
+    "crypto": "^1.0.1",
+    "crypto-browserify": "^3.12.0",
+    "crypto-js": "^4.2.0",
+    "decorators": "^0.0.1",
+    "fallback": "^1.0.1",
+    "gaxios": "^6.1.1",
+    "googleapis": "^128.0.0",
+    "lib": "^5.1.0",
+    "loader-runner": "^4.3.0",
+    "modules": "^0.4.0",
+    "node": "^21.1.0",
+    "node-modules": "^1.0.1",
+    "polyfill": "^0.1.0",
+    "react": "^18.2.0",
+    "react-calendar": "^4.6.1",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.19.0",
+    "react-scripts": "^5.0.1",
+    "react-tooltip": "^5.25.0",
+    "sass": "~1.56.0",
+    "script": "^0.1.4",
+    "stream": "^0.0.2",
+    "stream-browserify": "^3.0.0",
+    "target": "^0.0.2",
+    "tsconfig": "^7.0.0",
+    "util": "^0.12.5",
+    "uuid": "^9.0.1",
+    "web-vitals": "^2.1.4"
   },
-  
- 
   "scripts": {
-  
- 
-    
- 
-  "start": "react-scripts start",
-  
- 
-    
- 
-  "build": "react-scripts build",
-  
- 
-    
- 
-  "test": "react-scripts test",
-  
- 
-    
- 
-  "eject": "react-scripts eject"
-  
- 
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  
- 
   "eslintConfig": {
-  
- 
-    
- 
-  "extends": [
-  
- 
-    
- 
-    
- 
-  "react-app",
-  
- 
-    
- 
-    
- 
-  "react-app/jest"
-  
- 
-    
- 
-  ]
-  
- 
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
-  
- 
   "browserslist": {
-  
- 
-    
- 
-  "production": [
-  
- 
-    
- 
-    
- 
-  ">0.2%",
-  
- 
-    
- 
-    
- 
-  "not dead",
-  
- 
-    
- 
-    
- 
-  "not op_mini all"
-  
- 
-    
- 
-  ],
-  
- 
-    
- 
-  "development": [
-  
- 
-    
- 
-    
- 
-  "last 1 chrome version",
-  
- 
-    
- 
-    
- 
-  "last 1 firefox version",
-  
- 
-    
- 
-    
- 
-  "last 1 safari version"
-  
- 
-    
- 
-  ]
-  
- 
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }
