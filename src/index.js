@@ -4,13 +4,12 @@ import App from './App';
 
 
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+ReactDOM.createRoot(document.getElementById("root")).render(
 
-root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementsById('root')
+  
 );
 
 export default App;
