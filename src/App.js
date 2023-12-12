@@ -5,11 +5,11 @@ import CadastroCurso from './pages/CadCurso';
 import CadastroPeriodo from './pages/CadPeriodo';
 import CadastroProfessor from './pages/CadProfessor';
 import CadastroSala from './pages/CadSalas';
-import CadDesafio from './pages/CadDesafio';
-import CadHorario from './pages/CadHorario';
+import CadHorario from './pages/CadHorario'
 import Agenda from './pages/Agenda';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 function App() {
@@ -17,12 +17,19 @@ function App() {
 
     <Router>
       <div >
+
+      <div className="image-container">
+        <img
+          src="./logo.png"
+          alt="Logo"
+        />
+      </div>
+
+
          {/* Menu de Navegação Bootstrap */}
          <nav className="navbar navbar-expand-lg navbar-light bg-light">
   <div className="container">
-    <Link className="navbar-brand" to="/">
-      <img id="img-sale" src="../logo.png" width="200" height="50" alt="" />
-    </Link>
+    <Link className="navbar-brand" to="/"> </Link>
 
     <button
       className="navbar-toggler"
@@ -64,13 +71,8 @@ function App() {
           </Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/CadDesafio">
-            Desafio
-          </Link>
-        </li>
-        <li className="nav-item">
           <Link className="nav-link" to="/CadHorario">
-            Horários
+            Horario
           </Link>
         </li>
         <li className="nav-item">
@@ -91,13 +93,14 @@ function App() {
           <Route path="/CadPeriodo" element={<CadastroPeriodo />} />
           <Route path="/CadProfessor" element={<CadastroProfessor />} />
           <Route path="/CadSalas" element={<CadastroSala />} />
-          <Route path="/CadDesafio" element={<CadDesafio />} />
-          <Route path="/CadHorario" element={<CadHorario />} />
+          <Route path="/CadHorario" element={<CadHorario/>} />
           <Route path="/Agenda" element={<Agenda />} />
         </Routes>
       </div>
     </Router>
+    
   );
+  
 }
 
 export default App;

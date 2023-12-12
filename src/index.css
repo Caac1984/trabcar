@@ -20,16 +20,18 @@ h1 {
 
 .navbar1 {
   color: #eef0ea;
+ 
 }
 
-.container{
-  background-color: #8f8fa559;
-  border-radius: 10px;
+.collapse {
+  background-color: #5e5c6b74;
+  border-radius: 5px;
 }
 
-.navbar {
-color: #eef0ea;
-
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 li a {
@@ -40,12 +42,26 @@ li a {
 }
 
 li a:hover {
-  background-color: #6060855e; 
+  background-color: #60608593; 
   color: #e4e1e1; 
   border-radius: 5px;
-  text-align: center;
+  text-align: auto;
 }
 
+
+/* Estilo do menu de navegação Bootstrap */
+.navbar {
+  background-color: #333; /* Cor de fundo do menu */
+  margin-bottom: 20px;
+}
+
+.navbar-brand {
+  color: #fff;
+}
+
+.navbar-toggler-icon {
+  background-color: #ffffff04;
+}
 
 
 /* -----> Agenda <----- */
@@ -194,10 +210,26 @@ form {
 
 /* -----> Imagem <----- */
 
-.img-sale {
-  width: 20px;
-  height: 15px;
-  
+.image-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.image-container img {
+  width: 20%;
+  height: auto;
+  position: relative;
+  top: 20px;
+  left: 30px;
+}
+
+.image-container {
+  margin: 20px 0; /* Adicione margem acima e abaixo do logo */
+}
+
+.image-container img {
+  max-width: 100%; /* Garantir que a imagem não ultrapasse a largura máxima do contêiner */
 }
 
 /* -----> Tela Inicio <----- */

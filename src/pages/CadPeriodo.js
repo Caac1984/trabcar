@@ -94,52 +94,33 @@ function CadastroPeriodo() {
       <div className="form-container">
         <h1>Cadastro de Períodos</h1>
         <h4>Adicionar:</h4>
-        <input
-          className='input'
-          type="number"
-          value={numeroPeriodo}
+        <input className='input' type="number" value={numeroPeriodo}
           onChange={(e) => setNumeroPeriodo(e.target.value)}
-          placeholder="Número do Período"
-        />
-        <input
-          type="text"
-          value={semestreAno}
+          placeholder="Número do Período"/>
+        <input type="text" value={semestreAno}
           onChange={(e) => setSemestreAno(e.target.value)}
-          placeholder="Semestre/Ano do Período"
-        />
+          placeholder="Semestre/Ano do Período"/>
         <p></p>
         <div className="date-input">
-          <label>Data de Início: </label>
+          <h4>Data de Início: </h4>
           <p></p>
-          <input
-            className='periodo-container'
-            type="date"
-            value={dataInicio}
-            onChange={(e) => setDataInicio(e.target.value)}
-          />
+          <input className='periodo-container' type="date" value={dataInicio}
+            onChange={(e) => setDataInicio(e.target.value)} />
           <p></p>
-          <label>Data de Fim: </label>
+          <h4>Data de Fim: </h4>
           <p></p>
-          <input
-            className='periodo-container'
-            type="date"
-            value={dataFim}
-            onChange={(e) => setDataFim(e.target.value)}
-          />
+          <input className='periodo-container' type="date" value={dataFim}
+            onChange={(e) => setDataFim(e.target.value)} />
         </div>
         <p></p>
         <div className="input-container">
           <p></p>
           <h3>Turno:</h3>
           <p></p>
-          <select
-            multiple
-            value={turno}
-            onChange={(e) => {
+          <select multiple value={turno} onChange={(e) => {
               const selectedOptions = Array.from(e.target.selectedOptions, (option) => option.value);
               setTurno(selectedOptions);
-            }}
-          >
+            }}>
             <option value="matutino">Matutino</option>
             <option value="vespertino">Vespertino</option>
             <option value="noturno">Noturno</option>
